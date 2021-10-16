@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>exercise9</title>
+    <style>
+        #area {
+            background-color: violet;
+            color: white;
+        }
+        tr input {
+            background-color: khaki;
+            color: blue;
+        }
+        #submit1 {
+            background-color: white;
+            color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>글 작성하기</h1>
+    <table>
+        <!-- (tr>td+td>input[name])*3 -->
+        <tr>
+            <td>작성자 : </td>
+            <td><input type="text" name="writer"></td>
+        </tr>
+        <tr>
+            <td>아이디 : </td>
+            <td><input type="text" name="id"></td>
+        </tr>
+        <tr>
+            <td>이메일 : </td>
+            <td><input type="text" name="email_id">@<input type="text" name="email_addr"></td>
+        </tr>
+        <!-- tr>td+td>select>option*3^input*2 -->
+        <tr>
+            <td>휴대폰 : </td>
+            <td>
+                <select name="tel1">
+                    <option>010</option>
+                    <option>011</option>
+                    <option>017</option>
+                </select>-
+                <input type="text" name="tel2">-
+                <input type="text" name="tel3">
+            </td>
+        </tr>
+        <!-- tr>td+td>input[name]^tr>td*2^tr>td*2 -->
+        <!-- tr>td+td>input[name]^tr>td+td>textarea^tr>td*2 -->
+        <tr>
+            <td>글제목 : </td>
+            <td><input type="text" name="title"></td>
+            <tr>
+                <td>내용</td>
+                <td><textarea name="text" id="area" cols="30" rows="10"></textarea></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input id="submit1" type="submit" value="제출"></td>
+            </tr>
+        </tr>
+    </table>
+
+</body>
+</html>
